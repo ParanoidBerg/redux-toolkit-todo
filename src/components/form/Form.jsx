@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './form.module.css'
 import { useDispatch } from 'react-redux/es/exports';
+import { add } from '../features/reducer';
 
 const Form = () => {
     const [text, setText] = useState('')
@@ -13,12 +14,7 @@ const dispatch = useDispatch()
     const handleSubmit = (e) =>{
         e.preventDefault()
         if (text !== '') {
-            dispatch ({
-                type: "add",
-                payload: text
-                    
-                
-            })
+            dispatch (add(text))
             setText('')
         }
     }
