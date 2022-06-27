@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './list.module.css'
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useDispatch } from 'react-redux/es/hooks/useDispatch';
-import { del } from '../features/reducer';
+import { del } from '../../features/reducer';
 
 const List = () => {
 

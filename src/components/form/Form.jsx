@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './form.module.css'
+import { add } from '../../features/reducer';
 import { useDispatch } from 'react-redux/es/exports';
-import { add } from '../features/reducer';
 
 const Form = () => {
     const [text, setText] = useState('')

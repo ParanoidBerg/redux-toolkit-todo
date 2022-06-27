@@ -1,5 +1,4 @@
-import styles from "./styles.module.css"
-import Form from "./components/form/Form";
+import Form from "./components/Form/Form";
 import List from "./components/List/List";
 
 function App() {
